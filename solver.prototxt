@@ -1,0 +1,16 @@
+train_net: "euclid.prototxt"
+
+display: 1
+average_loss: 1
+lr_policy: "fixed"
+# lr for unnormalized softmax
+base_lr: 1e-1
+# high momentum
+momentum: 0.99
+# no gradient accumulation
+iter_size: 1
+max_iter: 100
+weight_decay: 0.0005
+snapshot: 50
+snapshot_prefix: "train"
+test_initialization: false
